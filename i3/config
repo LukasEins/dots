@@ -62,8 +62,9 @@ bindsym $mod+shift+Return exec thunar
 # start dmenu (a program launcher)
 #bindsym $mod+shift+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
- #bindsym $mod+d exec "rofi -modi drun,run -show drun"
+#bindsym $mod+d exec "rofi -modi drun,run -show drun"
 bindsym $mod+d exec ~/.config/rofi/bin/launcher
+bindsym Mod1+d exec ~/.config/rofi/bin/runner
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -206,15 +207,18 @@ bindsym $mod+r mode "resize"
 #    }
 #}
 
+bindsym $mod+shift+d exec discord -enable-gpu-rasterization
+
 #Screenshot
 bindsym Print exec spectacle
 
 #Set wallpaper
-exec --no-startup-id feh --bg-scale /home/lukas/Downloads/stuff/wallpaper/EaE8a1B.png
+#exec --no-startup-id feh --bg-scale /home/lukas/Downloads/stuff/wallpaper/lainw.png
+exec --no-startup-id feh --bg-scale /home/lukas/Downloads/stuff/wallpaper/undan.png
 
 #Set gaps
 gaps inner 5
-gaps outer 0
+gaps outer 1
 
 
 #Set borders and titlebar
@@ -222,10 +226,9 @@ for_window [class="^.*"] border pixel 1
 #hide_edge_borders both
 
 #Assign Programs to workspaces
-assign [class="Firefox"] 1
 assign [class="Steam"] 2
-assign [class="(?i)multimc"] 3
-assign [class="discord"] 6
+assign [class="(?i)prismlauncher"] 3
+assign [class="discord"] 7
 assign [class="(?i)spotify"] 7
 
 #Steam
@@ -271,7 +274,7 @@ exec_always killall -q polybar ; polybar
 #Colors
 # class                 border   backgr. text    indicator child_border
 #client.focused          #ffa500 #285577 #ffffff #2e9ef4   #ffa500
-client.focused          #96CDFB  #96CDFB #FFFFFF #ABE9B3   #96CDFB
+client.focused          #96CDFB  #96CDFB #FFFFFF #ABE9B3   #56CDFB
 client.focused_inactive #6E6C7E  #6E6C7E #FFFFFF #ABE9B3   #96CDFB
 client.unfocused 	#1E1E2E  #1E1E2E #FFFFFF #1E1E2E   #1E1E2E
 client.urgent 		#ABE9B3  #ABE9B3 #FFFFFF #96CDFB   #B5E8E0
@@ -282,7 +285,7 @@ bindsym $mod+Ctrl+Down resize shrink height 5 px or 5 ppt
 bindsym $mod+Ctrl+Left resize grow width 5 px or 5 ppt
 
 exec --no-startup-id xset s off
-exec --no-startup-id xset -dpms
+exec --no-startup-id xset dpms 0 0 0
 exec --no-startup-id xset s noblank
 
 # Backup exit

@@ -207,23 +207,26 @@ bindsym $mod+r mode "resize"
 #    }
 #}
 
-bindsym $mod+shift+d exec discord -enable-gpu-rasterization
+bindsym $mod+shift+d exec discord-canary --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy
 
 #Screenshot
-bindsym Print exec spectacle
+bindsym Print exec --no-startup-id spectacle
 
 #Set wallpaper
-#exec --no-startup-id feh --bg-scale /home/lukas/Downloads/stuff/wallpaper/lainw.png
-exec --no-startup-id feh --bg-scale /home/lukas/Downloads/stuff/wallpaper/undan.png
+#exec --no-startup-id feh --bg-scale /home/lukas/Pictures/images/wallhaven/wallhaven-l88xol_1920x1080.png
+#exec --no-startup-id feh --bg-scale /home/lukas/Pictures/images/wallhaven/wallhaven-od2q8l_1920x1080.png
+#exec --no-startup-id feh --bg-scale /home/lukas/Downloads/stuff/wallpaper/undan.png
+exec --no-startup-id /home/lukas/.config/i3/scripts/walltimechanger.py
+
 
 #Set gaps
-gaps inner 5
-gaps outer 1
+gaps inner 3
+gaps outer -3
 
 
 #Set borders and titlebar
 for_window [class="^.*"] border pixel 1
-#hide_edge_borders both
+hide_edge_borders none
 
 #Assign Programs to workspaces
 assign [class="Steam"] 2
@@ -242,6 +245,7 @@ for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
 for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
 for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
 for_window [title="^Steam Keyboard$"] floating enable
+for_window [title="^timeshift$"] floating enable
 
 
 
@@ -276,7 +280,9 @@ exec_always killall -q polybar ; polybar
 #client.focused          #ffa500 #285577 #ffffff #2e9ef4   #ffa500
 client.focused          #96CDFB  #96CDFB #FFFFFF #ABE9B3   #56CDFB
 client.focused_inactive #6E6C7E  #6E6C7E #FFFFFF #ABE9B3   #96CDFB
-client.unfocused 	#1E1E2E  #1E1E2E #FFFFFF #1E1E2E   #1E1E2E
+#client.focused_inactive #1E1E2E  #1E1E2E #FFFFFF #1E1E2E   #1E1E2E
+#client.unfocused 	#1E1E2E  #1E1E2E #FFFFFF #1E1E2E   #1E1E2E
+client.unfocused        #6E6C7E  #6E6C7E #FFFFFF #ABE9B3   #96CDFB
 client.urgent 		#ABE9B3  #ABE9B3 #FFFFFF #96CDFB   #B5E8E0
 
 bindsym $mod+Ctrl+Right resize shrink width 5 px or 5 ppt

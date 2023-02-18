@@ -1,5 +1,3 @@
-adobe-source-han-sans-jp-fonts
-adobe-source-sans-fonts
 amd-ucode
 ani-cli-git
 animdl-git
@@ -25,9 +23,6 @@ btrfs-progs
 cbonsai
 cef-minimal-obs-bin
 debugedit
-discord_arch_electron
-discover
-dmenu
 dolphin
 dotnet-runtime-6.0
 drkonqi
@@ -60,7 +55,6 @@ iwd
 jdk8-openjdk
 jre-openjdk
 kactivitymanagerd
-katawa-shoujo-bin
 kate
 kde-cli-tools
 kde-gtk-config
@@ -102,7 +96,6 @@ make
 man-db
 mgba-qt
 milou
-multimc-bin
 nano
 neofetch
 network-manager-applet
@@ -112,7 +105,6 @@ noto-fonts-emoji
 ntfs-3g
 nvtop
 obs-studio-tytan652
-opentabletdriver
 otf-nerd-fonts-fira-mono
 oxygen
 oxygen-icons
@@ -123,7 +115,6 @@ pacman
 pacman-contrib
 patch
 pavucontrol
-pfetch
 picom-jonaburg-fix
 pipes.sh
 pipewire

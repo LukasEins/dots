@@ -25,3 +25,19 @@ random_hue()
 }
 
 PROMPT_COMMAND="random_hue"
+
+export EDITOR="vim"
+export TERMINAL="kitty"
+export BROWSER="firefox"
+alias pf='pfetch'
+alias nf='neofetch'
+alias bt='btop'
+alias nv='nvtop'
+alias untar='tar -xvf'
+alias uninstall='sudo pacman -Rns'
+alias install='sudo pacman -S'
+alias i3conf='vim $HOME/.config/i3/config'
+alias polyconf='sudo vim $HOME/.config/polybar/config'
+alias vimconf='vim $HOME/.config/'
+alias untar='tar -xvzf'
+alias clock='tty-clock -cn'

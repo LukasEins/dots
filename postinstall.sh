@@ -9,6 +9,7 @@ sudo pacman -S --noconfirm --needed xdg-user-dirs
 xdg-user-dirs-update
 sudo pacman -S --noconfirm --needed noto-fonts noto-fonts-emoji noto-fonts-cjk
 sudo pacman -S --noconfirm --needed lxappearance
+sudo pacman -S --noconfirm --needed btop++ nvtop neovim
 sudo pacman -S --noconfirm --needed dunst
 sudo pacman -S --noconfirm --needed mpv
 sudo pacman -S --noconfirm --needed neofetch

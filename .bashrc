@@ -30,19 +30,14 @@ PS1='\[\e[1;91m\][\[\e[m\]\[\e[1;92m\]\u\[\e[m\]\[\e[1;95m\]@\h\[\e[m\]\[\e[1;97
 
 #PROMPT_COMMAND="random_hue"
 
-export EDITOR="vim"
-export TERMINAL="kitty"
+export EDITOR="nvim"
+export TERMINAL="wezterm"
 export BROWSER="firefox"
-alias pf='pfetch'
 alias nf='neofetch'
 alias bt='btop'
 alias nv='nvtop'
-alias untar='tar -xvf'
 alias uninstall='sudo pacman -Rns'
 alias install='sudo pacman -S'
-alias i3conf='vim $HOME/.config/i3/config'
-alias polyconf='sudo vim $HOME/.config/polybar/config'
-alias vimconf='vim $HOME/.config/'
-alias untar='tar -xvzf'
-alias clock='tty-clock -cn'
-alias ssh="kitty +kitten ssh"
+alias hyprconf='nvim $HOME/.config/hypr/hyprland.conf'
+alias wayconf='nvim $HOME/.config/waybar/'
+alias vimconf='nvim $HOME/.config/'

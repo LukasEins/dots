@@ -1,7 +1,8 @@
 #! /usr/bin/env bash
 echo "use this with archinstall minimal install"
 sleep 2
-git clone git clone https://aur.archlinux.org/yay.git
+cd ~
+git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 sudo pacman -S --noconfirm --needed xdg-user-dirs

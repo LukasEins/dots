@@ -12,7 +12,7 @@ cd ~/Pictures/wallpapers
 git clone https://github.com/MujtabaAsim/dots/tree/main/Placidity/Wallpapers
 sudo pacman -S --noconfirm --needed noto-fonts noto-fonts-emoji noto-fonts-cjk
 sudo pacman -S --noconfirm --needed lxappearance
-sudo pacman -S --noconfirm --needed btop nvtop neovim
+sudo pacman -S --noconfirm --needed btop nvtop neovim yt-dlp
 sudo pacman -S --noconfirm --needed dunst
 sudo pacman -S --noconfirm --needed mpv
 sudo pacman -S --noconfirm --needed neofetch
@@ -23,13 +23,16 @@ sudo pacman -S --noconfirm --needed cliphist
 sudo pacman -S --noconfirm --needed grim slurp
 sudo pacman -S --noconfirm --needed polkit-gnome
 sudo pacman -S --noconfirm --needed reflector
+sudo pacman -S --noconfirm --needed firefox 
+sudo pacman -S --noconfirm --needed gamemode gamescope helvum network-manager-applet pavucontrol
 sudo pacman -S --noconfirm --needed thunar thunar-archive-plugin thunar-volman
 sudo pacman -S --noconfirm --needed qt5-wayland qt6-wayland
-yay -S --noconfirm -needed swww waybar-hyprland
+yay -S --noconfirm -needed swww waybar-hyprland vscodium swaylock-effects wlogout
 sudo pacman -S --noconfirm --needed xdg-desktop-portal-hyprland
 sudo pacman -S --noconfirm --needed flatpak
 sudo pacman -S --noconfirm --needed sddm
 systemctl enable sddm.service
+systemctl enable NetworkManager.service
 systemctl enable reflector.timer
 systemctl disable dhcpcd.service
 systemctl stop dhcpcd.service

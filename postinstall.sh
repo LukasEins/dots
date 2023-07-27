@@ -7,6 +7,9 @@ cd yay
 makepkg -si
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 xdg-user-dirs-update
+mkdir /home/lukas/Pictures/wallpapers
+cd /home/lukas/Pictures/wallpapers
+git clone https://github.com/MujtabaAsim/dots/tree/main/Placidity/Wallpapers
 sudo pacman -S --noconfirm --needed noto-fonts noto-fonts-emoji noto-fonts-cjk
 sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed btop nvtop neovim

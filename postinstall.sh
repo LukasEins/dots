@@ -12,7 +12,7 @@ cd ~/Pictures/wallpapers
 git clone https://github.com/MujtabaAsim/dots/
 sudo pacman -S --noconfirm --needed sway xorg-xwayland
 sudo pacman -S --noconfirm --needed noto-fonts noto-fonts-emoji noto-fonts-cjk
-sudo pacman -S --noconfirm --needed lxappearance
+sudo pacman -S --noconfirm --needed lxappearance unzip wget
 sudo pacman -S --noconfirm --needed btop nvtop neovim yt-dlp
 sudo pacman -S --noconfirm --needed mpv zathura swayimg autotiling-rs
 sudo pacman -S --noconfirm --needed neofetch

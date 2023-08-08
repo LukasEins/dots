@@ -27,8 +27,7 @@ sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed gamemode gamescope helvum network-manager-applet pavucontrol
 sudo pacman -S --noconfirm --needed thunar thunar-archive-plugin thunar-volman
 sudo pacman -S --noconfirm --needed qt5-wayland qt6-wayland
-yay -S --noconfirm -needed swww vscodium swaylock-effects wlogout herbe pywal-16-colors
-#sudo pacman -S --noconfirm --needed xdg-desktop-portal-hyprland
+yay -S --noconfirm -needed swww vscodium swaylock-effects wlogout herbe pywal-16-colors armcord-bin
 sudo pacman -S --noconfirm --needed flatpak
 systemctl enable NetworkManager.service
 systemctl enable fstrim.timer

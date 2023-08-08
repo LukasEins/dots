@@ -14,7 +14,7 @@ sudo pacman -S --noconfirm --needed sway xorg-xwayland
 sudo pacman -S --noconfirm --needed noto-fonts noto-fonts-emoji noto-fonts-cjk
 sudo pacman -S --noconfirm --needed lxappearance
 sudo pacman -S --noconfirm --needed btop nvtop neovim yt-dlp
-sudo pacman -S --noconfirm --needed mpv
+sudo pacman -S --noconfirm --needed mpv zathura swayimg autotiling-rs
 sudo pacman -S --noconfirm --needed neofetch
 sudo pacman -S --noconfirm --needed waybar
 sudo pacman -S --noconfirm --needed wofi
@@ -27,7 +27,7 @@ sudo pacman -S --noconfirm --needed firefox
 sudo pacman -S --noconfirm --needed gamemode gamescope helvum network-manager-applet pavucontrol
 sudo pacman -S --noconfirm --needed thunar thunar-archive-plugin thunar-volman
 sudo pacman -S --noconfirm --needed qt5-wayland qt6-wayland
-yay -S --noconfirm -needed swww vscodium swaylock-effects wlogout herbe pywal-16-colors armcord-bin
+yay -S --noconfirm -needed swww vscodium swaylock-effects wlogout herbe pywal-16-colors armcord-bin wlay-git
 sudo pacman -S --noconfirm --needed flatpak
 systemctl enable NetworkManager.service
 systemctl enable fstrim.timer
